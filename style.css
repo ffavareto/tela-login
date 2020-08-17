@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+*,
+button,
+input {
+  font-family: 'Baloo Tamma 2', cursive;
+}
+
+:root {
+  --primary-color: #ffcb3c;
+  --second-color: #ff9811;
+  --font-color: #fff;
+  --border-radius: 0.3em;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--second-color);
+}
+
+header h1 {
+  color: var(--font-color);
+}
+
+form {
+  margin-top: 150px;
+}
+
+#login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 3;
+  background-color: var(--primary-color);
+  width: max-content;
+  height: max-content;
+  margin: auto;
+  padding: 2em 4em;
+  border-radius: var(--border-radius)
+}
+
+#login div:nth-child(1),
+#login div:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+
+#login div:nth-child(3) a {
+  text-decoration: none;
+  border: none;
+  background-color: #222;
+  padding: 0px 12px;
+  border-radius: var(--border-radius)
+}
+
+label {
+  margin-right: 8px;
+}
+
+label,
+a {
+  color: var(--font-color);
+  font-size: 28px;
+}
+
+input {
+  border-radius: var(--border-radius);
+  padding: 0.5em;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  background-color: var(--second-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  color: var(--font-color)
+}
